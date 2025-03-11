@@ -1,0 +1,46 @@
+{
+    "Summary": "Ms. Jones suffered a whiplash injury in a car accident last September. She had to go through ten sessions of physiotherapy to help with the stiffness and discomfort. Given your progress, I\u2019d expect you to make a full recovery within six months of the accident. There are no signs of long-term damage or degeneration, so I don\u2019t need to worry about this affecting me in the future. If anything changes or you experience worsening symptoms, you can always come back for a follow-up.",
+    "NER_Results": {
+        "Symptoms": [
+            "stiffness",
+            "backaches",
+            "pain",
+            "discomfort"
+        ],
+        "Treatment": [
+            "painkillers",
+            "sessions",
+            "physiotherapy"
+        ],
+        "Diagnosis": [
+            "whiplash",
+            "injury"
+        ],
+        "Prognosis": [
+            "recovery"
+        ]
+    },
+    "Keywords": [
+        "accident"
+    ],
+    "Sentiment": "Anxious",
+    "Intent": "Discussing recovery",
+    "SOAP_Note": {
+        "Subjective": {
+            "Chief_Complaint": "stiffness, backaches, pain, discomfort",
+            "History_of_Present_Illness": "Ms. Jones suffered a whiplash injury in a car accident last September. She had to go through ten sessions of physiotherapy to help with the stiffness and discomfort. Given your progress, I\u2019d expect you to make a full recovery within six months of the accident. There are no signs of long-term damage or degeneration, so I don\u2019t need to worry about this affecting me in the future. If anything changes or you experience worsening symptoms, you can always come back for a follow-up."
+        },
+        "Objective": {
+            "Physical_Exam": "Full range of motion, no tenderness.",
+            "Observations": "Patient appears in normal health."
+        },
+        "Assessment": {
+            "Diagnosis": "whiplash, injury",
+            "Severity": "Mild, improving"
+        },
+        "Plan": {
+            "Treatment": "painkillers, sessions, physiotherapy",
+            "Follow-Up": "Full recovery expected within six months. Return if symptoms worsen."
+        }
+    }
+}
