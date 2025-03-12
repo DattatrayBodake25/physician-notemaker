@@ -1,0 +1,44 @@
+{
+    "Summary": "The patient had a whiplash injury caused by hitting his head on the steering wheel in a car accident last September . The patient's neck and back pain has improved, but there are no signs of long-term damage or degeneration . He is now on track for a full recovery within six months of the accident .",
+    "NER_Results": {
+        "Symptoms": [
+            "car accident",
+            "discomfort",
+            "injury",
+            "pain",
+            "stiffness",
+            "whiplash injury"
+        ],
+        "Treatment": [
+            "painkillers",
+            "physiotherapy"
+        ],
+        "Diagnosis": [
+            "injury",
+            "whiplash injury"
+        ],
+        "Prognosis": [
+            "recovery"
+        ]
+    },
+    "Sentiment": "NEGATIVE",
+    "Intent": "Reporting symptoms",
+    "SOAP_Note": {
+        "Subjective": {
+            "Chief_Complaint": "car accident, discomfort, injury, pain, stiffness, whiplash injury",
+            "History_of_Present_Illness": "The patient had a whiplash injury caused by hitting his head on the steering wheel in a car accident last September . The patient's neck and back pain has improved, but there are no signs of long-term damage or degeneration . He is now on track for a full recovery within six months of the accident ."
+        },
+        "Objective": {
+            "Physical_Exam": "Signs of discomfort and limited range of motion.",
+            "Observations": "Patient appears in normal health."
+        },
+        "Assessment": {
+            "Diagnosis": "injury, whiplash injury",
+            "Severity": "Severe"
+        },
+        "Plan": {
+            "Treatment": "painkillers, physiotherapy",
+            "Follow-Up": "Regular follow-up recommended due to symptom severity."
+        }
+    }
+}
