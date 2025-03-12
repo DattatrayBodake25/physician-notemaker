@@ -146,7 +146,7 @@ if transcript:
                 st.success("✅ Transcript processed successfully!")
 
                 # --- 📝 DIAGNOSTIC SUMMARY ---
-                st.subheader("📌 Results (JSON Format)")
+                st.subheader("📝 Diagnostic Summary")
                 st.json(output, expanded=True)
 
                 # --- DOWNLOAD BUTTON ---
