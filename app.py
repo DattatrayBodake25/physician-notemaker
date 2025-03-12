@@ -2,6 +2,8 @@ import sys
 import asyncio
 import warnings
 import torch
+import subprocess
+import spacy
 
 # === Fix torch.classes issue ===
 sys.modules['torch._classes'] = None
@@ -14,6 +16,16 @@ except RuntimeError:
 
 # === Suppress PyTorch path warnings ===
 warnings.filterwarnings("ignore", category=UserWarning, module="torch._classes")
+
+# === Ensure spaCy model is installed ===
+try:
+    spacy.load('en_core_web_sm')
+except OSError:
+    print("Downloading spaCy model 'en_core_web_sm'...")
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+
+# === Load spaCy model ===
+nlp = spacy.load('en_core_web_sm')
 
 import streamlit as st
 import json
