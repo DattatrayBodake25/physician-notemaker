@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 aiohappyeyeballs==2.5.0
 aiohttp==3.11.13
 aiosignal==1.3.2
@@ -119,3 +120,13 @@ weasel==0.4.1
 wrapt==1.17.2
 xxhash==3.5.0
 yarl==1.18.3
+=======
+transformers
+spacy
+scikit-learn
+sentence-transformers
+torch
+nltk
+numpy
+jupyter
+>>>>>>> 01fac9b35e266539671581432fb3f765840bb266
