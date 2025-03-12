@@ -1,7 +1,6 @@
 import sys
 import asyncio
 import warnings
-import torch
 import subprocess
 import spacy
 
@@ -22,7 +21,7 @@ try:
     spacy.load('en_core_web_sm')
 except OSError:
     print("Downloading spaCy model 'en_core_web_sm'...")
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"], check=True)
 
 # === Load spaCy model ===
 nlp = spacy.load('en_core_web_sm')
