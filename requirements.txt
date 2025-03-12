@@ -9,8 +9,6 @@ sentence-transformers
 spacy
 nltk
 textblob
-spacy
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.3/en_core_web_sm-3.7.3.tar.gz
 
 # === PDF and DOCX Handling ===
 pdfplumber
@@ -37,4 +35,5 @@ watchdog
 typing_extensions
 
 # === Install spaCy model after package installation ===
-spacy[en]
+spacy
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.3/en_core_web_sm-3.7.3.tar.gz
