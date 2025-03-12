@@ -1,8 +1,8 @@
 import sys
 import asyncio
 import warnings
-import subprocess
 import spacy
+from spacy.cli import download
 
 # === Fix torch.classes issue ===
 sys.modules['torch._classes'] = None
@@ -18,10 +18,11 @@ warnings.filterwarnings("ignore", category=UserWarning, module="torch._classes")
 
 # === Ensure spaCy model is installed ===
 try:
-    spacy.load('en_core_web_sm')
+    nlp = spacy.load('en_core_web_sm')
 except OSError:
     print("Downloading spaCy model 'en_core_web_sm'...")
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"], check=True)
+    download('en_core_web_sm')
+    nlp = spacy.load('en_core_web_sm')
 
 # === Load spaCy model ===
 nlp = spacy.load('en_core_web_sm')
