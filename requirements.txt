@@ -1,0 +1,10 @@
+spacy
+transformers
+torch
+numpy
+scikit-learn
+sentence-transformers
+streamlit
+pdfplumber
+python-docx
+asyncio
